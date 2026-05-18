@@ -54,12 +54,19 @@ func main() {
 
 	// fmt.Println(x, y)
 
-	var (
-		x    int
-		y        = 20
-		z    int = 40
-		d, e     = 50, "Khalilullah"
-		f, g string
-	)
-	fmt.Println(x, y, z, d, e, f, g)
+	// var (
+	// 	x    int
+	// 	y        = 20
+	// 	z    int = 40
+	// 	d, e     = 50, "Khalilullah"
+	// 	f, g string
+	// )
+	// fmt.Println(x, y, z, d, e, f, g)
+
+	x := 40
+	// x, y := 30, "khalilThePro"
+	x, y := 50, `ХалилПрограммист` // <=  We can only do this on := this. ANd we can not achieve this by the = sign.
+
+	fmt.Println(x, y)
+
 }
