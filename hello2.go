@@ -36,8 +36,8 @@ func main() {
 
 	// fmt.Println(num + int8(num2) + int8(num3))
 
-	var x = 18
-	if x >= 18 {
+	// var x = 18
+	if 10 >= 18 {
 		fmt.Println("you are eligible, for the club.")
 
 	} else {
