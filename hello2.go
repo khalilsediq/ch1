@@ -37,10 +37,20 @@ func main() {
 	// fmt.Println(num + int8(num2) + int8(num3))
 
 	// var x = 18
-	if 10 >= 18 {
-		fmt.Println("you are eligible, for the club.")
+	// if 10 >= 18 {
+	// 	fmt.Println("you are eligible, for the club.")
 
-	} else {
-		fmt.Println("Sorry, you are not eligible for the Club")
-	}
+	// } else {
+	// 	fmt.Println("Sorry, you are not eligible for the Club")
+	// }
+
+	// var x = int  <= this is declared as a 0 value.
+
+	// var x, y int = 20, 50 <= we can declare multiple variables at once and they can be of the same type.
+
+	// var x, y int //All zero values of the same types
+
+	// var x, y = 20, "Khalilullah"  // <= All values of different types
+
+	fmt.Println(x, y)
 }
