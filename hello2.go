@@ -30,9 +30,17 @@ func main() {
 
 	// var num int8 = 20
 	// var num2 = 10
-	var num3 = 4.5
-	var num4 = 5.5
-	fmt.Println(num3 - num4)
+	// var num3 = 4.5
+	// var num4 = 5.5
+	// fmt.Println(num3 - num4)
 
 	// fmt.Println(num + int8(num2) + int8(num3))
+
+	var x = 18
+	if x >= 18 {
+		fmt.Println("you are eligible, for the club.")
+
+	} else {
+		fmt.Println("Sorry, you are not eligible for the Club")
+	}
 }
