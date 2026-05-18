@@ -52,5 +52,14 @@ func main() {
 
 	// var x, y = 20, "Khalilullah"  // <= All values of different types
 
-	fmt.Println(x, y)
+	// fmt.Println(x, y)
+
+	var (
+		x    int
+		y        = 20
+		z    int = 40
+		d, e     = 50, "Khalilullah"
+		f, g string
+	)
+	fmt.Println(x, y, z, d, e, f, g)
 }
