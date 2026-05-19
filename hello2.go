@@ -168,7 +168,13 @@ func checkArr() {
 	// fmt.Println(arr, arr2)
 	// fmt.Println(arr)
 
-	var myArray = [3]int{1, 2, 3}
-	var mySlice = []int{1, 2, 3}
-	fmt.Println(myArray, mySlice)
+	// var myArray = [3]int{1, 2, 3}
+	// var mySlice = []int{1, 2, 3}
+	// fmt.Println(myArray, mySlice)
+
+	var x = [...]int{1, 2, 3}
+	var y = [3]int{1, 2, 3}
+	fmt.Println(x == y) // prints true
+	fmt.Println(x != y) // prints false
+
 }
