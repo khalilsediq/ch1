@@ -95,8 +95,23 @@ func main() {
 	// var newPrice float64 = price * 2
 	// fmt.Println(newPrice)
 
-	x := 10
-	x = 20
-	fmt.Println(x)
-	x = 30
+	// x := 10
+	// x = 20
+	// fmt.Println(x)
+	// x = 30
+
+	// var y = 89
+
+	_0 := 0_0
+	_𝟙 := 20
+	π := 3
+	ａ := "hello" // Unicode U+FF41
+	fmt.Println(_0)
+	fmt.Println(_𝟙)
+	fmt.Println(π)
+	fmt.Println(ａ)
+
+	// var name = 0
+	// fmt.Println(name)
+
 }
