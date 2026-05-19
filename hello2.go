@@ -80,15 +80,18 @@ const (
 const z = 3 * 3
 
 func main() {
-	var y = "hello"
-	fmt.Println(x)
-	fmt.Println(y)
+	// var y = "hello"
+	// fmt.Println(x)
+	// fmt.Println(y)
 	// fmt.Println(z)
 	// var b = x + 1
 	// var f = "bye"
 	// fmt.Println(b)
 	// fmt.Println(f)
-	y = "bye"
-	fmt.Println(y)
+	// y = "bye"
+	// fmt.Println(y)
 
+	const price = 80
+	var newPrice float64 = price * 2
+	fmt.Println(newPrice)
 }
