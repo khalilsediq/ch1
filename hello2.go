@@ -153,10 +153,10 @@ func checkArr() {
 	// var z = [...]int{10, 20, 30, 40}
 	// fmt.Println(z[4])
 
-	var finalBoss = [...]int{1, 5: 10, 2}
-	var hero [7]int
+	var finalBoss = [...]int{1, 5: 10, 2, 99}
+	// var hero [7]int
 
-	hero = finalBoss
-	fmt.Println(hero)
+	// hero = finalBoss
+	fmt.Println(len(finalBoss))
 
 }
