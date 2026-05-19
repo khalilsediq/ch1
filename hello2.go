@@ -162,9 +162,13 @@ func checkArr() {
 	// var finalCheck = [...]int{4: 10, 9: 99}
 	// fmt.Println(finalCheck)
 
-	var arr = [4]int{1, 2, 3}
-	var arr2 = [4]int{1, 2, 3, 4}
-	arr = arr2
-	fmt.Println(arr, arr2)
-	fmt.Println(arr)
+	// var arr = [4]int{1, 2, 3}
+	// var arr2 = [4]int{1, 2, 3, 4}
+	// arr = arr2
+	// fmt.Println(arr, arr2)
+	// fmt.Println(arr)
+
+	var myArray = [3]int{1, 2, 3}
+	var mySlice = []int{1, 2, 3}
+	fmt.Println(myArray, mySlice)
 }
