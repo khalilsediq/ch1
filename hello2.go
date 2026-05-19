@@ -91,7 +91,12 @@ func main() {
 	// y = "bye"
 	// fmt.Println(y)
 
-	const price = 80
-	var newPrice float64 = price * 2
-	fmt.Println(newPrice)
+	// const price = 80
+	// var newPrice float64 = price * 2
+	// fmt.Println(newPrice)
+
+	x := 10
+	x = 20
+	fmt.Println(x)
+	x = 30
 }
