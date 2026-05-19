@@ -145,6 +145,18 @@ func checkArr() {
 	// fmt.Println(x[1])
 	// fmt.Println(x)
 
-	var z = [...]int{1, 2, 3, 10: 7, 19: 100, 20}
-	fmt.Println(z)
+	// var z = [...]int{1, 2, 3, 10: 7, 19: 100, 20}
+	// fmt.Println(z)
+
+	// var z = [...]int{10, 20, 30, 40}
+	// fmt.Println(z[4])
+	// var z = [...]int{10, 20, 30, 40}
+	// fmt.Println(z[4])
+
+	var finalBoss = [...]int{1, 5: 10, 2}
+	var hero [7]int
+
+	hero = finalBoss
+	fmt.Println(hero)
+
 }
