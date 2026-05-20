@@ -239,7 +239,18 @@ func checkArr() {
 
 func sliceInGO() {
 
-	var x = []int{10, 20, 30, 40, 50}
-	fmt.Println(x)
+	// var x = []int{10, 20, 30, 40, 50}
+	// x[3] = 0
+	// fmt.Println(x)
+
+	// var y [][]int
+	// fmt.Println(y)
+
+	// var x = []int{60, 70, 90}
+	// x[0] = 10
+	// fmt.Println(x)
+
+	var z []int
+	fmt.Println(z != nil)
 
 }
