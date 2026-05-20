@@ -196,11 +196,22 @@ func checkArr() {
 	// y[7][0] = 100 // This adds the 100 number to the 0 index of the.
 	// fmt.Println(y)
 
-	var x = [3]int{100, 200, 300}
-	x[1] = 199
-	fmt.Println(x)
+	// var x = [3]int{100, 200, 300}
+	// x[1] = 199
+	// fmt.Println(x)
 
+	// var inventory = [...]int{2: 50, 100}
+	// fmt.Println(inventory)
+
+	// Part 1: The Blueprint
 	var inventory = [...]int{2: 50, 100}
-	fmt.Println(inventory)
+
+	// Part 2: The Grid
+	var grid [3][4]int
+	grid[1][2] = inventory[3]
+
+	// Part 3: The Target
+	const targetIndex = 3
+	fmt.Println(grid[0][targetIndex])
 
 }
