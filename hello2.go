@@ -265,9 +265,6 @@ func sliceInGO() {
 	// k = append(k, 8, "jani", "lidia")
 	// fmt.Println(k)
 
-	var x = []int{1, 2, 3, 4}
-	y := []int{20, 30, 40}
-	x = append(x, y...)
-	fmt.Println(x)
-
+	var x []int
+	fmt.Println(append(x, 50))
 }
