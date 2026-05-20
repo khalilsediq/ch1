@@ -204,14 +204,32 @@ func checkArr() {
 	// fmt.Println(inventory)
 
 	// Part 1: The Blueprint
-	var inventory = [...]int{2: 50, 100}
+	// var inventory = [...]int{2: 50, 100}
 
-	// Part 2: The Grid
-	var grid [3][4]int
-	grid[1][2] = inventory[3]
+	// // Part 2: The Grid
+	// var grid [3][4]int
+	// grid[1][2] = inventory[3]
 
-	// Part 3: The Target
-	const targetIndex = 3
-	fmt.Println(grid[0][targetIndex])
+	// // Part 3: The Target
+	// const targetIndex = 3
+	// fmt.Println(grid[0][targetIndex])
+
+	// var config = [...]int{1: 10, 4: 40}
+	// fmt.Println(config)
+
+	// var center [2][5]int
+	// fmt.Println(center)
+
+	// Stage 1: The Config Array
+	var config = [...]int{1: 10, 4: 40}
+
+	// Stage 2: The Multi-Grid
+	var dataCenter [2][5]int
+	dataCenter[0][3] = config[2]
+	dataCenter[1][1] = config[4]
+
+	// Stage 3: The Access Phase
+	readIndex := 5
+	fmt.Println(dataCenter[0][readIndex]) /// This will cause a runtime error.
 
 }
