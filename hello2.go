@@ -177,7 +177,14 @@ func checkArr() {
 	// fmt.Println(x == y) // prints true
 	// fmt.Println(x != y) // prints false
 
-	var x [2][3]int
-	fmt.Println(x)
+	// var x [2][3]int
+	// x[0] = 10
+	// fmt.Println(x)
 
+	// var scores = [4]int{10, 20, 30, 40}
+	// fmt.Println(scores[3])
+
+	var scores = [4]int{10, 20, 30, 40}
+	i := 3
+	fmt.Println(scores[i])
 }
