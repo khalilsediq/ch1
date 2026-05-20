@@ -200,4 +200,7 @@ func checkArr() {
 	x[1] = 199
 	fmt.Println(x)
 
+	var inventory = [...]int{2: 50, 100}
+	fmt.Println(inventory)
+
 }
