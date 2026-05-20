@@ -253,11 +253,16 @@ func sliceInGO() {
 	// var z []any
 	// fmt.Println(z != nil)
 
-	var x []any
-	z := int8(90)
+	// var x []any
+	// z := int8(90)
 
-	var y int = 89
-	x = append(x, 54, 65, 767, y, z, 34, "Sibghat", "khalil")
-	fmt.Println(x)
+	// var y int = 89
+	// x = append(x, 54, 65, 767, y, z, 34, "Sibghat", "khalil")
+	// fmt.Println(x)
+
+	var k = []any{23, 455, 56, 67, "khalilullah"}
+	// var k = []int{3, 4, 5, 6, 7}
+	k = append(k, 8, "jani", "lidia")
+	fmt.Println(k)
 
 }
