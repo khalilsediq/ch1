@@ -118,6 +118,7 @@ func main() {
 	// 	fmt.Println(i)
 	// }
 	checkArr()
+	sliceInGO()
 }
 
 // func calculateScope() {
@@ -221,15 +222,24 @@ func checkArr() {
 	// fmt.Println(center)
 
 	// Stage 1: The Config Array
-	var config = [...]int{1: 10, 4: 40}
+	// var config = [...]int{1: 10, 4: 40}
 
-	// Stage 2: The Multi-Grid
-	var dataCenter [2][5]int
-	dataCenter[0][3] = config[2]
-	dataCenter[1][1] = config[4]
+	// // Stage 2: The Multi-Grid
+	// var dataCenter [2][5]int
+	// dataCenter[0][3] = config[2]
+	// dataCenter[1][1] = config[4]
 
-	// Stage 3: The Access Phase
-	readIndex := 5
-	fmt.Println(dataCenter[0][readIndex]) /// This will cause a runtime error.
+	// // Stage 3: The Access Phase
+	// readIndex := 5
+	// fmt.Println(dataCenter[0][readIndex]) /// This will cause a runtime error.
+
+}
+
+/// Finally coming to slice ...
+
+func sliceInGO() {
+
+	var x = []int{10, 20, 30, 40, 50}
+	fmt.Println(x)
 
 }
