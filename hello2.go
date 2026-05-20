@@ -250,7 +250,14 @@ func sliceInGO() {
 	// x[0] = 10
 	// fmt.Println(x)
 
-	var z []int
-	fmt.Println(z != nil)
+	// var z []any
+	// fmt.Println(z != nil)
+
+	var x []any
+	z := int8(90)
+
+	var y int = 89
+	x = append(x, 54, 65, 767, y, z, 34, "Sibghat", "khalil")
+	fmt.Println(x)
 
 }
