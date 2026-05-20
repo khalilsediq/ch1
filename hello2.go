@@ -184,7 +184,16 @@ func checkArr() {
 	// var scores = [4]int{10, 20, 30, 40}
 	// fmt.Println(scores[3])
 
-	var scores = [4]int{10, 20, 30, 40}
-	i := 3
-	fmt.Println(scores[i])
+	// var scores = [4]int{10, 20, 30, 40}
+	// i := 3
+	// fmt.Println(scores[i])
+
+	// var x [2][3]int
+	// x[0][0] = 10
+	// fmt.Println(x)
+
+	var y [2][3]int
+	y[0][0] = 100 // This adds the 100 number to the 0 index of the.
+	fmt.Println(y)
+
 }
