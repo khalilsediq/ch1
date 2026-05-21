@@ -286,4 +286,10 @@ func sliceInGO() {
 	// x := []int{1, 2, 3}
 	// x = append(x, 4)
 	// fmt.Println(x)
+
+	x := []int{10, 20, 30, 40, 50}
+	y := []int{15, 25, 35, 45, 55}
+	z := append(x, y...)
+	fmt.Println(z)
+
 }
