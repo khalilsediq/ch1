@@ -317,8 +317,12 @@ func sliceInGO() {
 
 	//We can also specify a fix  lenght and a capicity of any Slice inside of make funciton.
 	//For Example:
-	y := make([]int, 5, 10) // IT will give a fix length 5 and a capicity of 10 to the Slice.
-	fmt.Println(y)
-	fmt.Println("The Length is", len(y), "The Capicity is", cap(y))
+	// y := make([]int, 5, 10) // IT will give a fix length 5 and a capicity of 10 to the Slice.
+	// fmt.Println(y)
+	// fmt.Println("The Length is", len(y), "The Capicity is", cap(y))
 
+	//We can also declare a Slice with 0 length and with 10 capacity or more.
+	//For Example:
+	z := make([]int, 0, 5)
+	fmt.Println(len(z), cap(z))
 }
