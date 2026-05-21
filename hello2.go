@@ -299,16 +299,20 @@ func sliceInGO() {
 	// fmt.Println(x)
 	// x = append(x, 30)
 
-	var x []int
-	fmt.Println(x, len(x), cap(x))
-	x = append(x, 10)
-	fmt.Println(x, len(x), cap(x))
-	x = append(x, 30)
-	fmt.Println(x, len(x), cap(x))
-	x = append(x, 40)
-	fmt.Println(x, len(x), cap(x))
-	x = append(x, 50, 70)
-	fmt.Println(x, len(x), cap(x))
-	x = append(x, len(x), cap(x))
+	// var x []int
+	// fmt.Println(x, len(x), cap(x))
+	// x = append(x, 10)
+	// fmt.Println(x, len(x), cap(x))
+	// x = append(x, 30)
+	// fmt.Println(x, len(x), cap(x))
+	// x = append(x, 40)
+	// fmt.Println(x, len(x), cap(x))
+	// x = append(x, 50, 70)
+	// fmt.Println(x, len(x), cap(x))
+	// x = append(x, len(x), cap(x))
+
+	x := make([]int, 5) // THis has a length of 5 and a capacity of 5.
+	x = append(x, 10)   // As soon as the 10 is added its lenght is increased and the capacity is doubled as soon as the 10 value was added.
+	fmt.Println(x)
 
 }
