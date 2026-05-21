@@ -313,6 +313,12 @@ func sliceInGO() {
 
 	x := make([]int, 5) // THis has a length of 5 and a capacity of 5.
 	x = append(x, 10)   // As soon as the 10 is added its lenght is increased and the capacity is doubled as soon as the 10 value was added.
-	fmt.Println(x)
+	// fmt.Println(x)
+
+	//We can also specify a fix  lenght and a capicity of any Slice inside of make funciton.
+	//For Example:
+	y := make([]int, 5, 10) // IT will give a fix length 5 and a capicity of 10 to the Slice.
+	fmt.Println(y)
+	fmt.Println("The Length is", len(y), "The Capicity is", cap(y))
 
 }
