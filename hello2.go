@@ -274,8 +274,13 @@ func sliceInGO() {
 	// fmt.Println(y)
 	// fmt.Println(z)
 
-	var x = []int{10, 20, 30}
-	fmt.Println(len(x)) // Prints 3
-	fmt.Println(cap(x)) // Prints 3
+	// var x = []int{10, 20, 30}
+	// fmt.Println(len(x)) // Prints 3
+	// fmt.Println(cap(x)) // Prints 3
+
+	var a []int  // This is completely unvisible in memory, meaning it does not exist in memory and its initial value is "nil".
+	b := []int{} // This one has space in memory, but is completely empty. And But still has
+
+	fmt.Println(a == nil, b == nil) // So this will print true and false.
 
 }
