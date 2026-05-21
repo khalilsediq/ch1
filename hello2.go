@@ -311,8 +311,8 @@ func sliceInGO() {
 	// fmt.Println(x, len(x), cap(x))
 	// x = append(x, len(x), cap(x))
 
-	x := make([]int, 5) // THis has a length of 5 and a capacity of 5.
-	x = append(x, 10)   // As soon as the 10 is added its lenght is increased and the capacity is doubled as soon as the 10 value was added.
+	// x := make([]int, 5) // THis has a length of 5 and a capacity of 5.
+	// x = append(x, 10)   // As soon as the 10 is added its lenght is increased and the capacity is doubled as soon as the 10 value was added.
 	// fmt.Println(x)
 
 	//We can also specify a fix  lenght and a capicity of any Slice inside of make funciton.
@@ -333,10 +333,24 @@ func sliceInGO() {
 	// fmt.Println(len(check), cap(check))
 
 	// This all will cause, a runtime error because the compiler can not see that variables are of that number, when we run this, it will cause a runtime error, but if we declare them as a number inside of a make it will cause a compile time error, because compiler can see the numbers and know that lenght can not be greateer than the capacity.
-	z := 3
-	g := 1
+	// z := 3
+	// g := 1
 
-	var slc = []int{20, 40}
-	slc = make([]int, z, g)
-	fmt.Println(slc)
+	// var slc = []int{20, 40}
+	// slc = make([]int, z, g)
+	// fmt.Println(slc)
+
+	////////////////////////////////////////////////
+
+	x := []int{1, 2, 3, 4}
+	y := x[:2] // This takes value from variable a index 0 till index 3 but cuts the third value in the printing terminal and only shows from length 1 till 2.
+	z := x[1:]
+	d := x[1:3]
+	e := x[:]
+	fmt.Println("x:", x)
+	fmt.Println("y:", y)
+	fmt.Println("z:", z)
+	fmt.Println("d:", d)
+	fmt.Println("e:", e)
+
 }
