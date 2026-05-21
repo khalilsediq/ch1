@@ -327,4 +327,8 @@ func sliceInGO() {
 	z = append(z, 10, 20, 30, 40)
 	fmt.Println(z)
 	fmt.Println(len(z), cap(z)) // In this case we have a non nil slice with a length of 0, but a capacity of 5. Since the length is 0, we can't directly index into it, but we append values to it.
+	a := 1
+	b := 2
+	check := make([]int, a, b)
+	fmt.Println(len(check), cap(check))
 }
