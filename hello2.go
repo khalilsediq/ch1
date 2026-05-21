@@ -323,12 +323,20 @@ func sliceInGO() {
 
 	//We can also declare a Slice with 0 length and with 10 capacity or more.
 	//For Example:
-	z := make([]int, 0, 5)
-	z = append(z, 10, 20, 30, 40)
-	fmt.Println(z)
-	fmt.Println(len(z), cap(z)) // In this case we have a non nil slice with a length of 0, but a capacity of 5. Since the length is 0, we can't directly index into it, but we append values to it.
-	a := 1
-	b := 2
-	check := make([]int, a, b)
-	fmt.Println(len(check), cap(check))
+	// z := make([]int, 0, 5)
+	// z = append(z, 10, 20, 30, 40)
+	// fmt.Println(z)
+	// fmt.Println(len(z), cap(z)) // In this case we have a non nil slice with a length of 0, but a capacity of 5. Since the length is 0, we can't directly index into it, but we append values to it.
+	// a := 1
+	// b := 2
+	// check := make([]int, a, b)
+	// fmt.Println(len(check), cap(check))
+
+	// This all will cause, a runtime error because the compiler can not see that variables are of that number, when we run this, it will cause a runtime error, but if we declare them as a number inside of a make it will cause a compile time error, because compiler can see the numbers and know that lenght can not be greateer than the capacity.
+	z := 3
+	g := 1
+
+	var slc = []int{20, 40}
+	slc = make([]int, z, g)
+	fmt.Println(slc)
 }
