@@ -283,4 +283,7 @@ func sliceInGO() {
 
 	fmt.Println(a == nil, b == nil) // So this will print true and false.
 
+	// x := []int{1, 2, 3}
+	// x = append(x, 4)
+	// fmt.Println(x)
 }
