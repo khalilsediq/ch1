@@ -356,8 +356,19 @@ func sliceInGO() {
 	// fmt.Println("d:", d)
 	// fmt.Println("e:", e)
 
-	var x = make([]int, 10, 10)
-	x[0] = 30
-	fmt.Println(append(x, 20))
+	// var x = make([]int, 10, 10)
+	// x[0] = 30
+	// fmt.Println(append(x, 20))
+
+	//Slices Share storage sometimes like changing x, changes y and z, and changing y, z changes  x. THis is because that slices shares storage sometimes.
+	var x = []int{1, 2, 3, 4}
+	y := x[:2]
+	z := x[3:]
+	x[0] = 20
+	y[1] = 30
+	x[3] = 40
+	fmt.Println("x:", x)
+	fmt.Println("y:", y)
+	fmt.Println("z:", z)
 
 }
