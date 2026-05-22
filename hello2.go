@@ -374,11 +374,23 @@ func sliceInGO() {
 	//Slicing slices gets more confusing when combined with append.
 	//For Example:
 
-	var x = []int{1, 2, 3, 4}
+	// var x = []int{1, 2, 3, 4}
+	// y := x[:2]
+	// fmt.Println("y:", cap(y), "x:", cap(x))
+	// y = append(y, 40)
+	// fmt.Println(x)
+	// fmt.Println(y) //SLices can be confusing like this.
+
+	x := make([]int, 0, 5)
+	x = append(x, 1, 2, 3, 4)
 	y := x[:2]
-	fmt.Println("y:", cap(y), "x:", cap(x))
-	y = append(y, 40)
-	fmt.Println(x)
-	fmt.Println(y) //SLices can be confusing like this.
+	z := x[2:]
+	fmt.Println(cap(x), cap(y), cap(z))
+	y = append(y, 30, 40, 50)
+	x = append(x, 60)
+	z = append(z, 70)
+	fmt.Println("x:", x)
+	fmt.Println("y:", y)
+	fmt.Println("z:", z)
 
 }
