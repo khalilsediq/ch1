@@ -410,9 +410,37 @@ func sliceInGO() {
 	// fmt.Println("y:", y)
 	// fmt.Println("z:", z)
 
-	//Copy slices
-	x := []int{1, 2, 3, 4}
-	y := make([]int, 4)
-	num := copy(y, x)
-	fmt.Println(num, y)
+	//Copy slices:  this is used to copy slice.
+	// x := []int{1, 2, 3, 4}
+	// y := make([]int, 4)
+	// num := copy(y, x)
+	// fmt.Println(num, y)
+
+	// x := []int{1,2,3,4}
+
+	// y := make([]int, 2)
+	// copy(y,x[2:])
+
+	x := []int{1, 2}
+	b := make([]int, 2)
+	_ = copy(b, x)
+	// *b = append(*b, 40, 60)
+	x[0] = 20
+	fmt.Printf("%p\n", x)
+	fmt.Printf("%p\n", b)
+	fmt.Println(x)
+	fmt.Println(b)
+
+	// sliceA := []int{1, 2, 3}
+	// sliceB := sliceA // Value copy of the header (pointer, len, cap)
+
+	// sliceB[0] = 99
+	// fmt.Println(sliceA)
+	// fmt.Println(sliceB)
+
+	// x := []int{1, 2}
+	// y := make([]int, 4)
+	// num := copy(y, x)
+	// fmt.Println(y, num)
+
 }
