@@ -381,16 +381,23 @@ func sliceInGO() {
 	// fmt.Println(x)
 	// fmt.Println(y) //SLices can be confusing like this.
 
-	x := make([]int, 0, 5)
-	x = append(x, 1, 2, 3, 4)
-	y := x[:2]
-	z := x[2:]
-	fmt.Println(cap(x), cap(y), cap(z))
-	y = append(y, 30, 40, 50)
-	x = append(x, 60)
-	z = append(z, 70)
-	fmt.Println("x:", x)
-	fmt.Println("y:", y)
-	fmt.Println("z:", z)
+	// x := make([]int, 0, 5)
+	// x = append(x, 1, 2, 3, 4)
+	// y := x[:2]
+	// z := x[2:]
+	// fmt.Println(cap(x), cap(y), cap(z))
+	// y = append(y, 30, 40, 50)
+	// x = append(x, 60)
+	// z = append(z, 70)
+	// fmt.Println("x:", x)
+	// fmt.Println("y:", y)
+	// fmt.Println("z:", z)
+
+	numbers := []int{11, 22, 33, 44, 55}
+	part := numbers[1:3]
+	part = append(part, 99)
+	part = append(part, 88, 77, 66)
+	fmt.Println(numbers)
+	fmt.Println(part, cap(part))
 
 }
