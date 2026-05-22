@@ -400,12 +400,19 @@ func sliceInGO() {
 	// fmt.Println(numbers)
 	// fmt.Println(part, cap(part))
 
-	x := [4]int{5, 6, 7, 8}
-	y := x[:2]
-	z := x[2:]
-	x[0] = 10
-	fmt.Println("x:", x)
-	fmt.Println("y:", y)
-	fmt.Println("z:", z)
+	//We can also convert arrays to slices, but it is not a recommended approac and is only for understanding purposes only.
+	//FOR Example:
+	// x := [4]int{5, 6, 7, 8}
+	// y := x[:2]
+	// z := x[2:]
+	// x[0] = 10
+	// fmt.Println("x:", x)
+	// fmt.Println("y:", y)
+	// fmt.Println("z:", z)
 
+	//Copy slices
+	x := []int{1, 2, 3, 4}
+	y := make([]int, 4)
+	num := copy(y, x)
+	fmt.Println(num, y)
 }
