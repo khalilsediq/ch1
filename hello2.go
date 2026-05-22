@@ -393,11 +393,19 @@ func sliceInGO() {
 	// fmt.Println("y:", y)
 	// fmt.Println("z:", z)
 
-	numbers := []int{11, 22, 33, 44, 55}
-	part := numbers[1:3]
-	part = append(part, 99)
-	part = append(part, 88, 77, 66)
-	fmt.Println(numbers)
-	fmt.Println(part, cap(part))
+	// numbers := []int{11, 22, 33, 44, 55}
+	// part := numbers[1:3]
+	// part = append(part, 99)
+	// part = append(part, 88, 77, 66)
+	// fmt.Println(numbers)
+	// fmt.Println(part, cap(part))
+
+	x := [4]int{5, 6, 7, 8}
+	y := x[:2]
+	z := x[2:]
+	x[0] = 10
+	fmt.Println("x:", x)
+	fmt.Println("y:", y)
+	fmt.Println("z:", z)
 
 }
