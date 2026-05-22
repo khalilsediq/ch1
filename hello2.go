@@ -342,15 +342,22 @@ func sliceInGO() {
 
 	////////////////////////////////////////////////
 
-	x := []int{1, 2, 3, 4}
-	y := x[:2] // This takes value from variable a index 0 till index 3 but cuts the third value in the printing terminal and only shows from length 1 till 2.
-	z := x[1:]
-	d := x[1:3]
-	e := x[:]
-	fmt.Println("x:", x)
-	fmt.Println("y:", y)
-	fmt.Println("z:", z)
-	fmt.Println("d:", d)
-	fmt.Println("e:", e)
+	// x := []int{1, 2, 3, 4, 7, 9, 8}
+	// y := x[3:4]
+	// y = append(y, 39, 55, 66, 99, 11, 25)
+	// fmt.Println(x, cap(x))
+	// fmt.Println(y, cap(y))
+	// z := x[1:]
+	// d := x[1:3]
+	// e := x[:]
+	// fmt.Println("x:", x)
+	// fmt.Println("y:", y)
+	// fmt.Println("z:", z)
+	// fmt.Println("d:", d)
+	// fmt.Println("e:", e)
+
+	var x = make([]int, 10, 10)
+	x[0] = 30
+	fmt.Println(append(x, 20))
 
 }
