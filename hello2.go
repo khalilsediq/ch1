@@ -444,8 +444,30 @@ func sliceInGO() {
 	// fmt.Println(y, num)
 
 	//This is how copy works: below.
-	a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-	copy(a[:1], a[8:])
-	fmt.Println(a)
+	// a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	// copy(a[:1], a[8:])
+	// fmt.Println(a)
+
+	// 	sensorData := []int{98, 99, 101, 102}
+
+	// // We use the 3-index syntax to tightly control capacity
+	// view := sensorData[0:2:2] // The third one locks the views capacity to it's length.
+
+	// view = append(view, 555)
+
+	//String and Runes and Bytes
+
+	// var s string = "Hello there, this is khalilThePro"
+	// var b byte = s[0]
+	var s string = "Hello there"
+	var s2 string = s[4:7]
+	var s3 string = s[:5]
+	var s4 string = s[6:]
+	fmt.Println(s2)
+	fmt.Println(s3)
+	fmt.Println(s4)
+	fmt.Println()
+	// var b byte = s[6]
+	// fmt.Println(b)
 
 }
