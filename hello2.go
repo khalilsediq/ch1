@@ -459,15 +459,23 @@ func sliceInGO() {
 
 	// var s string = "Hello there, this is khalilThePro"
 	// var b byte = s[0]
-	var s string = "Hello there"
+	// var s string = "Hello there"
+	// var s2 string = s[4:7]
+	// var s3 string = s[:5]
+	// var s4 string = s[6:]
+	// fmt.Println(s2)
+	// fmt.Println(s3)
+	// fmt.Println(s4)
+	// fmt.Println()
+	// var b byte = s[6]
+	// fmt.Println(b)
+
+	var s string = "Hello ☀️"
 	var s2 string = s[4:7]
 	var s3 string = s[:5]
 	var s4 string = s[6:]
 	fmt.Println(s2)
 	fmt.Println(s3)
 	fmt.Println(s4)
-	fmt.Println()
-	// var b byte = s[6]
-	// fmt.Println(b)
 
 }
